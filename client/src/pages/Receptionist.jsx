@@ -9,7 +9,7 @@ function Receptionist() {
 
   const fetchPatients = async () => {
     const res = await axios.get(
-      "http://localhost:8000/api/patients"
+      "https://queue-cure-backend-eh9q.onrender.com/api/patients"
     );
 
     setPatients(res.data);
