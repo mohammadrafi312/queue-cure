@@ -56,7 +56,7 @@ const realAverageTime =
   }
 
   await axios.post(
-    "http://localhost:8000/api/patients",
+    "https://queue-cure-backend-eh9q.onrender.com/api/patients",
     {
       patientName: patientName.trim(),
     }
@@ -82,7 +82,7 @@ const realAverageTime =
     if (!confirmReset) return;
 
     await axios.delete(
-      "http://localhost:8000/api/patients/reset"
+      "https://queue-cure-backend-eh9q.onrender.com/api/patients/reset"
     );
 
     fetchPatients();
