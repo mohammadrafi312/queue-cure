@@ -29,10 +29,18 @@ const patientSchema = new mongoose.Schema(
       type: Date,
       default: null,
     },
+
+    actualDuration: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("Patient", patientSchema);
+module.exports = mongoose.model(
+  "Patient",
+  patientSchema
+);
