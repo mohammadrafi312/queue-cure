@@ -68,7 +68,7 @@ const realAverageTime =
 
   const callNext = async () => {
     await axios.post(
-      "http://localhost:8000/api/patients/call-next"
+      "https://queue-cure-backend-eh9q.onrender.com/api/patients/call-next"
     );
 
     fetchPatients();
@@ -97,7 +97,7 @@ const realAverageTime =
     if (!newName) return;
 
     await axios.put(
-      `http://localhost:8000/api/patients/${id}`,
+      `https://queue-cure-backend-eh9q.onrender.com/api/patients/${id}`,
       {
         patientName: newName,
       }
@@ -114,7 +114,7 @@ const realAverageTime =
     if (!confirmDelete) return;
 
     await axios.delete(
-      `http://localhost:8000/api/patients/${id}`
+      `https://queue-cure-backend-eh9q.onrender.com/api/patients/${id}`
     );
 
     fetchPatients();
