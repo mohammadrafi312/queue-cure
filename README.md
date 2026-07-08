@@ -192,21 +192,7 @@ Both screens update instantly
 * Vercel
 * Render
 
----
 
-# 📷 Screenshots
-
-## Receptionist Dashboard
-
-*Add screenshot here*
-
----
-
-## Waiting Room Display
-
-*Add screenshot here*
-
----
 
 # 🚀 Installation
 
